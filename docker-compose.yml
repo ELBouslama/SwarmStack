@@ -2,6 +2,7 @@ version: '3'
 
 services:
     nodejs-app:
+        image: nodeapi
         build:
           context: ./nodedocker_app
         container_name: nodejsserver
@@ -23,7 +24,7 @@ services:
         networks:
             - example-net 
     nginx:
-        image: nginx
+        image: nginx-proxy
         build:
           context: ./nginx
         container_name: nginx
