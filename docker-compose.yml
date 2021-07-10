@@ -23,6 +23,7 @@ services:
         networks:
             - example-net 
     nginx:
+        image: nginx
         build:
           context: ./nginx
         container_name: nginx
