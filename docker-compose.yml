@@ -36,4 +36,4 @@ services:
 
 networks:
   example-net:
-    external: true
+  
